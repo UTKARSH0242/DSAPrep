@@ -51,7 +51,7 @@ public class SortArrayOf012 {
                 arr[high] = temp;
                 // Decrement high pointer, as the element at high is now correct
                 high--;
-                // Note: Do not increment mid here, as the swapped element at mid needs to be checked
+                // Note: Do not increment mid here, as the swapped element at mid need to be checked
             }
         }
     }
