@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 public class SecondLargestAndSmallest {
     public static void main(String[] args) {

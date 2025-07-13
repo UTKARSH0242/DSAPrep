@@ -1,4 +1,4 @@
-package Array;
+package array;
 
 // Class to sort an array containing only 0s, 1s, and 2s using the Dutch National Flag Algorithm
 public class SortArrayOf012 {

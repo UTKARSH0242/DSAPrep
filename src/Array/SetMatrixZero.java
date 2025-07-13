@@ -84,7 +84,7 @@
 
 
 
-package Array;
+package array;
 
 public class SetMatrixZero {
     public static void main(String[] args) {

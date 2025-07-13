@@ -1,4 +1,4 @@
-package Array;//package Array;
+package array;//package Array;
 //
 //public class PascalTriangle {
 //    public static void main(String[] args) {
