@@ -16,7 +16,7 @@ public class TrappingRainwater {
         int rightMax = 0;
         int waterTrapped = 0;
 
-wbrb        while(left < right){
+        while(left < right){
             if (building[left] <= building[right]){
                 if (building[left] >= leftMax){
                     leftMax = building[left];
