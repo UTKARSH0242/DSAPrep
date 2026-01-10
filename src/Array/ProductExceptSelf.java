@@ -7,15 +7,32 @@ public class ProductExceptSelf {
         int[] nums = {1, 2, 3, 4};
 
         // Fixed: Use Arrays.toString to actually read the output
-        System.out.println("Basic Approach: " + Arrays.toString(productExceptSelf(nums)));
+//        System.out.println("Basic Approach: " + Arrays.toString(productExceptSelf(nums)));
         System.out.println("Optimized Approach: " + Arrays.toString(productExceptSelfOptimized(nums)));
+//        System.out.println("Brute Force" + Arrays.toString(productExceptSelfBrute(nums)));
+    }
+
+    private static int[] productExceptSelfBrute(int[] nums) {
+        int n = nums.length;
+        int[] answer = new int[n];
+
+         Arrays.fill(answer, 1);
+
+         for(int i = 0; i < n; i++){
+             for(int j = 0; j < n; j++){
+                 if(i != j){
+                     answer[i] *= nums[j];
+                 }
+             }
+         }
+         return answer;
     }
 
     public static int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] prefixProductFromStart = new int[n];
         int[] prefixProductFromEnd = new int[n];
-        int[] res = new int[n];
+        int[] res = new int[n]; 
 
         prefixProductFromStart[0] = nums[0];
         prefixProductFromEnd[n - 1] = nums[n - 1];
