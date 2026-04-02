@@ -7,8 +7,8 @@ public class ProductExceptSelf {
         int[] nums = {1, 2, 3, 4};
 
         // Fixed: Use Arrays.toString to actually read the output
-//        System.out.println("Basic Approach: " + Arrays.toString(productExceptSelf(nums)));
-        System.out.println("Optimized Approach: " + Arrays.toString(productExceptSelfOptimized(nums)));
+        System.out.println("Basic Approach: " + Arrays.toString(productExceptSelf(nums)));
+//        System.out.println("Optimized Approach: " + Arrays.toString(productExceptSelfOptimized(nums)));
 //        System.out.println("Brute Force" + Arrays.toString(productExceptSelfBrute(nums)));
     }
 
